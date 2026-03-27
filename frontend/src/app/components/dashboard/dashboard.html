@@ -1,0 +1,59 @@
+<div class="mb-4">
+    <h2 class="fw-bold text-secondary mb-1">Painel de guerrilha</h2>
+    <p class="text-muted">Bem-vinda de volta, Leonarda! Veja o resumo do UniSolidária hoje.</p>
+</div>
+
+<div class="row g-4 mb-4">
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100 p-3">
+            <div class="d-flex align-items-center">
+                <div class="bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                    <i class="bi bi-gift-fill fs-3"></i>
+                </div>
+                <div>
+                    <h6 class="text-muted mb-1 fw-bold" style="font-size: 0.85rem;">Doações Recebidas</h6>
+                    <h3 class="mb-0 fw-bold text-dark">{{ stats().totalDoacoes }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100 p-3">
+            <div class="d-flex align-items-center">
+                <div class="bg-warning bg-opacity-10 text-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                    <i class="bi bi-hourglass-split fs-3"></i>
+                </div>
+                <div>
+                    <h6 class="text-muted mb-1 fw-bold" style="font-size: 0.85rem;">Itens em Triagem</h6>
+                    <h3 class="mb-0 fw-bold text-dark">{{ stats().totalItens }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card border-0 shadow-sm rounded-4 h-100 p-3">
+            <div class="d-flex align-items-center">
+                <div class="bg-success bg-opacity-10 text-success rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+                    <i class="bi bi-people-fill fs-3"></i>
+                </div>
+                <div>
+                    <h6 class="text-muted mb-1 fw-bold" style="font-size: 0.85rem;">Famílias Atendidas</h6>
+                    <h3 class="mb-0 fw-bold text-dark">{{ stats().categoriasAtivas }}</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card border-0 shadow-sm rounded-4 p-5 text-center mt-2">
+    <div class="mb-4 text-muted fst-italic py-5">
+        <i class="bi bi-image text-light" style="font-size: 4rem;"></i><br>
+        Ilustração
+    </div>
+    <h4 class="text-primary fw-bold mb-3">Pronta para fazer a diferença?</h4>
+    <p class="text-muted mx-auto" style="max-width: 600px;">
+        Utilize o menu lateral para cadastrar novas doações ou visualizar relatórios detalhados. O UniSolidária ajuda a conectar quem quer fazer com quem precisa em Brusque.
+    </p>
+</div>
