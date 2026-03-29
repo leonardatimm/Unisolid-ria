@@ -1,0 +1,36 @@
+<div class="login-screen">
+    <div class="login-card">
+        
+        <div>
+            <i class="bi bi-heart-fill heart-icon"></i>
+            <h2 class="brand-name">UniSolidária</h2>
+            <p class="sub-text">Entre para gerenciar o bem em Brusque</p>
+        </div>
+
+        <div *ngIf="erroMensagem()" class="alert alert-danger" style="font-size: 0.75rem; padding: 0.5rem; margin-bottom: 1rem;">
+            {{ erroMensagem() }}
+        </div>
+
+        <form (submit)="entrar()">
+            <div class="form-group">
+                <label class="form-label">E-mail</label>
+                <input type="text" class="form-control" [(ngModel)]="loginData.usuario" name="usuario" placeholder="exemplo@unifebe.edu.br" required>
+            </div>
+            
+            <div class="form-group mb-4">
+                <label class="form-label">Senha</label>
+                <input type="password" class="form-control" [(ngModel)]="loginData.senha" name="senha" placeholder="••••••••" required>
+            </div>
+
+            <button type="submit" class="btn-login">
+                Entrar
+            </button>
+        </form>
+
+        <div class="links-section" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+            <a href="#" style="color: #888;">Esqueceu a senha?</a>
+            <a routerLink="/cadastro" style="color: #3461ff; font-weight: 600; font-size: 0.8rem;">Não possuo cadastro</a>
+        </div>
+
+    </div>
+</div>

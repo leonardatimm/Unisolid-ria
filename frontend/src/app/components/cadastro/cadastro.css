@@ -1,0 +1,49 @@
+/* Fundo Azul Vibrante */
+.login-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    background: #3461ff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card Branco Centralizado (um pouco mais alto) */
+.login-card {
+    background-color: white;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 360px; 
+    text-align: center;
+}
+
+.heart-icon { color: #3461ff; font-size: 2rem; }
+.brand-name { font-size: 1.5rem; font-weight: 800; color: #1a1a1a; margin-top: 0.5rem; margin-bottom: 0.2rem; }
+.sub-text { color: #888; font-size: 0.75rem; margin-bottom: 1.5rem; }
+
+.form-group { text-align: left; margin-bottom: 1rem; }
+.form-label { font-size: 0.7rem; font-weight: 700; color: #222; margin-bottom: 0.4rem; display: block; }
+
+.form-control {
+    width: 100%; padding: 0.7rem 0.8rem; border: 1px solid #ced4da;
+    border-radius: 6px; font-size: 0.85rem; box-sizing: border-box; outline: none; transition: all 0.2s;
+}
+.form-control:focus { border-color: #3461ff; box-shadow: 0 0 0 3px rgba(52, 97, 255, 0.15); }
+
+input[type="password"] { background-color: #f8f9fa; border: 1px solid transparent; }
+input[type="password"]:focus { background-color: #fff; border: 1px solid #3461ff; }
+
+.btn-login {
+    background-color: #3461ff; color: white; border: none; border-radius: 6px;
+    padding: 0.8rem; font-weight: 600; width: 100%; margin-top: 0.5rem; cursor: pointer; transition: background 0.2s;
+}
+.btn-login:hover { background-color: #274cd6; }
+
+.links-section { margin-top: 1.2rem; font-size: 0.75rem; }
+.links-section a { color: #3461ff; text-decoration: none; font-weight: 600; }
